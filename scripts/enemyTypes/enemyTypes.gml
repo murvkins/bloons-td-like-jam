@@ -3,6 +3,7 @@ function NormalEnemy () : Enemy () constructor {
 	object = oEnemy;
 	spd = 10;
 	hp = 10;
+	maxhp = 10;
 }
 
 
@@ -11,4 +12,5 @@ function FastEnemy () : Enemy () constructor {
 	object = oEnemy;
 	spd = 20;
 	hp = 5;
+	maxhp = 5;
 }

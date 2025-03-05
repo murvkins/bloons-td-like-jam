@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oTowerNormalC",
+  "%Name":"oTowerEightWayC",
   "eventList":[],
   "managed":true,
-  "name":"oTowerNormalC",
+  "name":"oTowerEightWayC",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTowerClickableParent","path":"objects/oTowerClickableParent/oTowerClickableParent.yy",},"propertyId":{"name":"towerEnum","path":"objects/oTowerClickableParent/oTowerClickableParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"new NormalTower()",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTowerClickableParent","path":"objects/oTowerClickableParent/oTowerClickableParent.yy",},"propertyId":{"name":"towerEnum","path":"objects/oTowerClickableParent/oTowerClickableParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"new EightWayTower()",},
   ],
   "parent":{
     "name":"tower Clickables",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTower1",
-    "path":"sprites/sTower1/sTower1.yy",
+    "name":"sTower2",
+    "path":"sprites/sTower2/sTower2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

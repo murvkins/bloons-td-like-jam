@@ -1,24 +1,27 @@
 if (instance_exists(objectToShoot)) {
 	//if target is still alive, shoot
 	//determine bullet types
+	var bttl = tower.bullet_ttl;
 	switch(tower.bullet_direction) {
 	case "at-target":		
-		var bullet = instance_create_depth(x, y, -9, oBullet);	
-		bullet.speed = tower.bullet_speed;
-		bullet.direction = point_direction(x,y,objectToShoot.x, objectToShoot.y);
-		bullet.damage = tower.damage;
-		alarm[0] = game_get_speed(gamespeed_fps) * 1 / tower.fire_rate;
+		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction:point_direction(x,y, objectToShoot.x, objectToShoot.y), damage: tower.damage, ttl: bttl});			
 		break;
 	case "spread":
 		break;
-	case "4-way":		
-		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x,y)});
-		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x,y-10)});
-		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x+10,y)});
-		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x-10,y+10)});
+	case "8-way":
+		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x-10,y), damage: tower.damage, ttl: bttl});
+		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x,y-10), damage: tower.damage, ttl: bttl});
+		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x+10,y), damage: tower.damage, ttl: bttl});
+		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x,y+10), damage: tower.damage, ttl: bttl});
+		
+		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x+10,y-10), damage: tower.damage, ttl: bttl});
+		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x+10,y+10), damage: tower.damage, ttl: bttl});
+		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x-10,y-10), damage: tower.damage, ttl: bttl});
+		instance_create_depth(x, y, -9, oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x-10,y+10), damage: tower.damage, ttl: bttl});
+		
 		break;
 	}
-	//alarm[0] = tower.fire_rate / gamespeed_fps;
+	alarm[0] = game_get_speed(gamespeed_fps) * 1 / tower.fire_rate;
 } else {
 	shooting = false;
 }

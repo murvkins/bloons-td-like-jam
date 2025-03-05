@@ -9,6 +9,7 @@ function Tower () constructor {
 	effect = "none";
 	bullet_speed = 0;
 	bullet_direction = "at-target";
+	bullet_ttl = 1;
 }
 
 function Enemy () constructor {
@@ -16,4 +17,5 @@ function Enemy () constructor {
 	object = oEnemy;
 	spd = 0;
 	hp = 0;	
+	maxhp = 0;
 }

@@ -47,6 +47,8 @@
     {"id":{"name":"oSpawn","path":"objects/oSpawn/oSpawn.yy",},},
     {"id":{"name":"oTowerClickableParent","path":"objects/oTowerClickableParent/oTowerClickableParent.yy",},},
     {"id":{"name":"oTowerDrag","path":"objects/oTowerDrag/oTowerDrag.yy",},},
+    {"id":{"name":"oTowerEightWay","path":"objects/oTowerEightWay/oTowerEightWay.yy",},},
+    {"id":{"name":"oTowerEightWayC","path":"objects/oTowerEightWayC/oTowerEightWayC.yy",},},
     {"id":{"name":"oTowerFast","path":"objects/oTowerFast/oTowerFast.yy",},},
     {"id":{"name":"oTowerFastC","path":"objects/oTowerFastC/oTowerFastC.yy",},},
     {"id":{"name":"oTowerNormal","path":"objects/oTowerNormal/oTowerNormal.yy",},},
