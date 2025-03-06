@@ -1,16 +1,16 @@
 function NormalEnemy () : Enemy () constructor {
 	name = "Normal"
 	object = oEnemy;
-	spd = 10;
-	hp = 10;
-	maxhp = 10;
+	spd = 1;
+	hp = 5;
+	maxhp = 5;
 }
 
 
 function FastEnemy () : Enemy () constructor {
 	name = "Fast"
 	object = oEnemy;
-	spd = 20;
+	spd = 1;
 	hp = 5;
 	maxhp = 5;
 }

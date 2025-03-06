@@ -10,6 +10,7 @@ function Tower () constructor {
 	bullet_speed = 0;
 	bullet_direction = "at-target";
 	bullet_ttl = 1;
+	
 }
 
 function Enemy () constructor {

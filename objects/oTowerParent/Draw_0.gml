@@ -17,6 +17,8 @@ if (en != noone) {
 		//set target as nearest enemy object
 		objectToShoot = en;
 		//draw_line(x, y, en.x, en.y);
+		
+		
 	} else {
 		//target is not in range, turn of shooting
 		shooting = false;

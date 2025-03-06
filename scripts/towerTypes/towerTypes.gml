@@ -9,7 +9,7 @@ function NormalTower () : Tower () constructor {
 	effect = "none";
 	bullet_speed = 5;
 	bullet_direction = "at-target";
-	bullet_ttl = 3;
+	bullet_ttl = 5;
 }
 
 
@@ -38,5 +38,19 @@ function EightWayTower () : Tower () constructor {
 	effect = "none";
 	bullet_speed = 10;
 	bullet_direction = "8-way";
+	bullet_ttl = 0.17;
+}
+
+function FreezeTower () : Tower () constructor {
+	name = "Freeze";
+	object = oTowerFreeze;
+	cost = 100;
+	range = 100;
+	fire_rate = 0.25;
+	damage = 0;
+	aoe = true;
+	effect = "slow";
+	bullet_speed = 0;
+	bullet_direction = "none";
 	bullet_ttl = 0.17;
 }
