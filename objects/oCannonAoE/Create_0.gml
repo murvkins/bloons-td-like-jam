@@ -2,8 +2,6 @@ aoeradius = 0;
 aoealpha = 1;
 maxradius = 1;
 
-range = self.range;
-
 image_xscale = aoeradius;
 image_yscale = aoeradius;
 

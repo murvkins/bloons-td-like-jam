@@ -1,2 +1,2 @@
-enemy.hp -= other.damage;
+currenthp -= other.damage;
 with(other) instance_destroy();

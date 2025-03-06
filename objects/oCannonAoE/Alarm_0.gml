@@ -1,14 +1,14 @@
 var time = 1;
 
 if (aoeradius < maxradius) {
-	aoeradius += 0.1;
+	aoeradius += 0.25;
 	image_xscale = aoeradius
 	image_yscale = aoeradius;
 } else if (aoeradius >= maxradius && aoealpha == 1) {
-		var enemies = enemiesInArea(range, x, y);		
+		var enemies = enemiesInArea(50, x, y);		
 		if (array_length(enemies) > 0) {			
 			for (var i = 0; i < array_length(enemies); i++) {				
-				enemies[i].rFreezetimer = 60;
+				enemies[i].currenthp -= damage;
 			}
 		}
 		aoealpha -= 0.1;		
