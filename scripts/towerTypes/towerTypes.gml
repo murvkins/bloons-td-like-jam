@@ -1,7 +1,7 @@
 function NormalTower () : Tower () constructor {
 	name = "Normal"
 	object = oTowerNormal;
-	cost = 50;
+	cost = 250;
 	range = 100;
 	fire_rate = 2;
 	damage = 1;
@@ -16,9 +16,9 @@ function NormalTower () : Tower () constructor {
 function FastTower () : Tower () constructor {
 	name = "Fast";
 	object = oTowerFast;
-	cost = 75;
-	range = 80;
-	fire_rate = 4;
+	cost = 4000;
+	range = 150;
+	fire_rate = 5;
 	damage = 1;
 	aoe = false;
 	bullet_speed = 10;
@@ -30,7 +30,7 @@ function FastTower () : Tower () constructor {
 function EightWayTower () : Tower () constructor {
 	name = "EightWay";
 	object = oTowerEightWay;
-	cost = 100;
+	cost = 400;
 	range = 100;
 	fire_rate = 1;
 	damage = 1;
@@ -44,7 +44,7 @@ function EightWayTower () : Tower () constructor {
 function FreezeTower () : Tower () constructor {
 	name = "Freeze";
 	object = oTowerFreeze;
-	cost = 100;
+	cost = 850;
 	range = 100;
 	fire_rate = 0.25;
 	damage = 0;
@@ -58,8 +58,8 @@ function FreezeTower () : Tower () constructor {
 function CannonTower () : Tower () constructor {
 	name = "Cannon";
 	object = oTowerCannon;
-	cost = 100;
-	range = 100;
+	cost = 900;
+	range = 150;
 	fire_rate = 0.25;
 	damage = 3;
 	aoe = true;

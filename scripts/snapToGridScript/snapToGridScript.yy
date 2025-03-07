@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"snapToGridScript",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"snapToGridScript",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

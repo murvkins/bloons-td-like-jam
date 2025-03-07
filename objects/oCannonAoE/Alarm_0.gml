@@ -5,7 +5,7 @@ if (aoeradius < maxradius) {
 	image_xscale = aoeradius
 	image_yscale = aoeradius;
 } else if (aoeradius >= maxradius && aoealpha == 1) {
-		var enemies = enemiesInArea(50, x, y);		
+		var enemies = enemiesInArea(sprite_width/2, x, y);		
 		if (array_length(enemies) > 0) {			
 			for (var i = 0; i < array_length(enemies); i++) {				
 				enemies[i].currenthp -= damage;

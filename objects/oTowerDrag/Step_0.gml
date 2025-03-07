@@ -1,7 +1,10 @@
 x = mouse_x;
 y = mouse_y;
 
-if (place_meeting(x,y,oReg) or place_meeting(x,y,oTowerParent)) {
+var x1 = snapToGrid(x);
+var y1 = snapToGrid(y);
+
+if (place_meeting(x1,y1,oReg) or place_meeting(x1,y1,oTowerParent)) {
 	col = c_red;	
 } else {
 	col = c_white;
