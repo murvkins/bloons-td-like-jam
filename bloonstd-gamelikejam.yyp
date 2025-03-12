@@ -86,6 +86,7 @@
     {"id":{"name":"oTowerParent","path":"objects/oTowerParent/oTowerParent.yy",},},
     {"id":{"name":"oUpgradeGreen","path":"objects/oUpgradeGreen/oUpgradeGreen.yy",},},
     {"id":{"name":"oUpgradeGreenBig","path":"objects/oUpgradeGreenBig/oUpgradeGreenBig.yy",},},
+    {"id":{"name":"oUpgradeParent","path":"objects/oUpgradeParent/oUpgradeParent.yy",},},
     {"id":{"name":"oUpgradeRed","path":"objects/oUpgradeRed/oUpgradeRed.yy",},},
     {"id":{"name":"oUpgradeRedBig","path":"objects/oUpgradeRedBig/oUpgradeRedBig.yy",},},
     {"id":{"name":"oUpgradeTemp","path":"objects/oUpgradeTemp/oUpgradeTemp.yy",},},

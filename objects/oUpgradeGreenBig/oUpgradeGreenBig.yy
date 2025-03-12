@@ -9,7 +9,10 @@
     "name":"hud",
     "path":"folders/Objects/hud.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oUpgradeParent",
+    "path":"objects/oUpgradeParent/oUpgradeParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

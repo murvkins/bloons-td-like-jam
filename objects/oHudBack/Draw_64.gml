@@ -82,12 +82,13 @@ if (global.instance_selected != noone && global.new_tower_hover == noone) {
 		draw_set_font(fSegoeUI_12Bold);
 		draw_set_halign(fa_center);
 		draw_text_ext(xleft+xwidth/2, 335, towermod.name, 19, xwidth-10);
-		var nameh = string_height_ext(towermod.name, 19, xwidth-10);
-		draw_set_font(fSegoeUI_13);	
-		draw_text_ext(xleft+xwidth/2, 335+nameh, buytext, 19, xwidth-10);
-		var buyh = string_height_ext(buytext, 19, xwidth-10);
+		
 		draw_set_font(fSegoeUI_13Bold);
-		draw_text_ext(xleft+xwidth/2, 335+nameh+buyh, towermod.cost, 19, xwidth-10);
+		draw_text_ext(xleft+xwidth/2, 425, towermod.cost, 19, xwidth-10);
+		
+		draw_set_font(fSegoeUI_12);	
+		var buyh = string_height_ext(buytext, 16, xwidth-10)-2.5;
+		draw_text_ext(xleft+xwidth/2, 425-buyh, buytext, 16, xwidth-10);
 		
 		draw_set_font(fSegoeUI_20);
 		draw_text(701, 456, string_concat("Sell for: ", string(sellprice * 0.8)));

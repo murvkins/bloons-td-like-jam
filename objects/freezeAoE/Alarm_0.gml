@@ -1,7 +1,7 @@
 var time = 1;
 
 if (aoeradius < maxradius) {
-	aoeradius += 0.1;
+	aoeradius += 0.1 * rangemod;
 	image_xscale = aoeradius
 	image_yscale = aoeradius;
 } else if (aoeradius >= maxradius && aoealpha == 1) {
@@ -10,7 +10,7 @@ if (aoeradius < maxradius) {
 		if (array_length(bloons) > 0) {			
 			for (var i = 0; i < array_length(bloons); i++) {
 				if (bloons[i].bloon.name != "white") {
-					bloons[i].rFreezetimer = 60;
+					bloons[i].rFreezetimer = 60 * freezemod;
 				}
 			}
 		}
