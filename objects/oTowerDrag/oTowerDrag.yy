@@ -35,6 +35,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":null,
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"towerCollision",
+    "path":"sprites/towerCollision/towerCollision.yy",
+  },
   "visible":true,
 }

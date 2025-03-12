@@ -5,10 +5,13 @@ if (aoeradius < maxradius) {
 	image_xscale = aoeradius
 	image_yscale = aoeradius;
 } else if (aoeradius >= maxradius && aoealpha == 1) {
-		var enemies = enemiesInArea(sprite_width/2, x, y);		
-		if (array_length(enemies) > 0) {			
-			for (var i = 0; i < array_length(enemies); i++) {				
-				enemies[i].currenthp -= damage;
+		var bloons = bloonsInArea(sprite_width/2, x, y);		
+		if (array_length(bloons) > 0) {			
+			for (var i = 0; i < array_length(bloons); i++) {
+				
+				if (bloons[i].bloon.name != "black") {
+					bloons[i].damage += self.damage;
+				}
 			}
 		}
 		aoealpha -= 0.1;		

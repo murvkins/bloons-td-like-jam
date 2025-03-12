@@ -36,6 +36,9 @@
     "name":"sFreezeTower",
     "path":"sprites/sFreezeTower/sFreezeTower.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"towerCollision",
+    "path":"sprites/towerCollision/towerCollision.yy",
+  },
   "visible":true,
 }

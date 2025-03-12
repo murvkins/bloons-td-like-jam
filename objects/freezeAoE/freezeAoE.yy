@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"freeze",
-    "path":"sprites/freeze/freeze.yy",
+    "name":"sFreeze",
+    "path":"sprites/sFreeze/sFreeze.yy",
   },
   "spriteMaskId":null,
   "visible":true,

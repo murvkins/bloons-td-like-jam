@@ -34,6 +34,9 @@
     "name":"sTower1",
     "path":"sprites/sTower1/sTower1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"towerCollision",
+    "path":"sprites/towerCollision/towerCollision.yy",
+  },
   "visible":true,
 }

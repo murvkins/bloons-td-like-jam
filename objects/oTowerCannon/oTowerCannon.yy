@@ -36,6 +36,9 @@
     "name":"sCannon",
     "path":"sprites/sCannon/sCannon.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"towerCollision",
+    "path":"sprites/towerCollision/towerCollision.yy",
+  },
   "visible":true,
 }
