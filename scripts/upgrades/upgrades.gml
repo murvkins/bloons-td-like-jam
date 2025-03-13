@@ -14,7 +14,7 @@ function LongRange () : TowerUpgrade () constructor {
 	purchased = false;
 	cost = 100;
 	mod_dartlife = 0;
-	mod_range = 0;
+	mod_range = 1.5;
 	mod_fire_rate = 0;
 	mod_freeze_timer = 0;
 	mod_aoe_radius = 0;
@@ -58,10 +58,10 @@ function WideFreezeRadius () : TowerUpgrade () constructor {
 	purchased = false;
 	cost = 300;
 	mod_dartlife = 0;
-	mod_range = 0;
+	mod_range = 1.5;
 	mod_fire_rate = 0;
 	mod_freeze_timer = 0;
-	mod_aoe_radius = 1.5;
+	mod_aoe_radius = 0;
 }
 
 function BiggerBombs () : TowerUpgrade () constructor {
@@ -98,8 +98,7 @@ function EpicRange () : TowerUpgrade () constructor {
 }
 
 function deleteAllUpgradeBacks() {
-	with (oUpgradeGreen) instance_destroy();
-	with (oUpgradeGreenBig) instance_destroy();
+	with (oUpgradeParent) instance_destroy();	
 	with (oUpgradeRed) instance_destroy();
 	with (oUpgradeRedBig) instance_destroy();
 	with (oSellButton) instance_destroy();
@@ -117,24 +116,23 @@ function drawUpgradeBacks(tower) {
 			case 1:			
 				xwidth = 150;
 				xleft = 626;
-				if (global.coins < towermods[i].cost && !tower.purchasedmods[i]) {
+				if (global.coins < towermods[i].cost && !tower.towermods[i].purchased) {
 					instance_create_layer(xleft, 290, "upgrades", oUpgradeRedBig);					
-					instance_create_layer(xleft+xwidth/2, 295, "Instances", oUpgradeTemp);
 				} else {
-					instance_create_layer(xleft, 290, "upgrades", oUpgradeGreenBig);					
-					instance_create_layer(xleft+xwidth/2, 295, "Instances", oUpgradeTemp);
-				}			
+					instance_create_layer(xleft, 290, "upgrades", oUpgradeParent, {sprite_index: sUpgradeBackGreenBig, towerid: tower, mod_index: i});					
+				}	
+				instance_create_layer(xleft+xwidth/2, 295, "Instances", oUpgradeTemp); //upgrade image
 				break;			
 			case 2:
 				xwidth = 70;
 				xleft = 626 + (i * xwidth) + (i * 10);
-				if (global.coins < towermods[i].cost && !tower.purchasedmods[i]) {
+				if (global.coins < towermods[i].cost && !tower.towermods[i].purchased) {
 					instance_create_layer(xleft, 290, "upgrades", oUpgradeRed);					
-					instance_create_layer(xleft+xwidth/2, 295, "Instances", oUpgradeTemp);
+					
 				} else {
-					instance_create_layer(xleft, 290, "upgrades", oUpgradeGreen);					
-					instance_create_layer(xleft+xwidth/2, 295, "Instances", oUpgradeTemp);
-				}			
+					instance_create_layer(xleft, 290, "upgrades", oUpgradeParent, {sprite_index: sUpgradeBackGreen, towerid: tower, mod_index: i});					
+				}	
+				instance_create_layer(xleft+xwidth/2, 295, "Instances", oUpgradeTemp); //upgrade image
 				break;			
 			}
 	}

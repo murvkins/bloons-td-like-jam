@@ -53,7 +53,7 @@ function WhiteBloon () : Enemy () constructor {
 	reward = 9;
 }
 
-function spawnOnDeath(tier, dmg) {
+function spawnOnDeath(tier) {
 	var deathspawn = [
 		[],
 		[oRedBloon],
@@ -62,7 +62,7 @@ function spawnOnDeath(tier, dmg) {
 		[oYellowBloon, oYellowBloon]
 	];
 	
-	var index = tier - dmg;
+	var index = tier - 1;
 	if (index < 0) index = 0;
 	return deathspawn[index];
 }

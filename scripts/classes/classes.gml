@@ -12,7 +12,6 @@ function Tower () constructor {
 	tower_speed = "";
 	description = "";
 	towermods = [];
-	purchasedmods = [];
 	sellprice = 0;
 }
 

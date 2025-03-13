@@ -1,4 +1,8 @@
 if (self.rFreezetimer == 0) {
 	bloondmg += other.damage;
 }
-other.life -= 1;
+
+if (other.life > 0) {
+	other.alarm[1] = 1;
+}
+

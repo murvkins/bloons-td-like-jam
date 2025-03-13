@@ -72,7 +72,7 @@ if (global.instance_selected != noone && global.new_tower_hover == noone) {
 			break;
 		}
 		
-		if (displaytower.towerEnum.purchasedmods[i]) {
+		if (displaytower.towerEnum.towermods[i].purchased) {
 			buytext = "Already bought";
 			sellprice += displaytower.towerEnum.towermods[i].cost;
 		}
@@ -90,9 +90,10 @@ if (global.instance_selected != noone && global.new_tower_hover == noone) {
 		var buyh = string_height_ext(buytext, 16, xwidth-10)-2.5;
 		draw_text_ext(xleft+xwidth/2, 425-buyh, buytext, 16, xwidth-10);
 		
-		draw_set_font(fSegoeUI_20);
-		draw_text(701, 456, string_concat("Sell for: ", string(sellprice * 0.8)));
+		draw_set_font(fSegoeUI_20);		
 	}
+	draw_text(701, 456, string_concat("Sell for: ", string(sellprice * 0.8)));
+	global.sellprice = sellprice * 0.8;
 	} else {
 		global.instance_selected = noone;
 	}

@@ -1,4 +1,4 @@
-if (!tower.towermods[index].purchased && global.coins >= tower.towermods[index].cost) {
-	global.coins -= tower.towermods[index].cost;
-	tower.towermods[index].purchased = true;
+if (!towerid.towermods[mod_index].purchased && global.coins >= towerid.towermods[mod_index].cost) {
+	global.coins -= towerid.towermods[mod_index].cost;
+	towerid.towermods[mod_index].purchased = true;
 }

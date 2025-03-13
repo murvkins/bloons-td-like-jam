@@ -1,12 +1,9 @@
-var time = 1;
-
 if (aoeradius < maxradius) {
 	aoeradius += 0.1 * rangemod;
 	image_xscale = aoeradius
 	image_yscale = aoeradius;
 } else if (aoeradius >= maxradius && aoealpha == 1) {
 		var bloons = bloonsInArea(range, x, y);
-		show_debug_message(bloons);
 		if (array_length(bloons) > 0) {			
 			for (var i = 0; i < array_length(bloons); i++) {
 				if (bloons[i].bloon.name != "white") {
@@ -22,4 +19,4 @@ if (aoeradius < maxradius) {
 		}
 }
 image_alpha = aoealpha;
-alarm[0] = time;
+alarm[0] = 1;

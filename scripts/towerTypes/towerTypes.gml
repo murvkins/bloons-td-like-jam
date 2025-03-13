@@ -13,7 +13,6 @@ function NormalTower () : Tower () constructor {
 	description = "Shoots a single dart. Can upgrade to piercing darts and long range darts.";
 	tower_speed = "Fast";
 	towermods = [new PiercingDarts(), new LongRange()];
-	purchasedmods = [false,false];
 	sellprice = 200;
 }
 
@@ -33,7 +32,6 @@ function FastTower () : Tower () constructor {
 	description = "Super Tower shoots a continuous stream of darts and can mow down even the fastest and most stubbon bloons.";
 	tower_speed = "Hypersonic";
 	towermods = [new EpicRange()];
-	purchasedmods = [false];
 	sellprice = 3500;
 }
 
@@ -52,7 +50,6 @@ function EightWayTower () : Tower () constructor {
 	description = "Shoots volley of tacks in 8 directions. Can upgrade its shoot range and its speed.";
 	tower_speed = "Medium";
 	towermods = [new FasterShooting(), new ExtraRangeTacks()];
-	purchasedmods = [false,false];
 	sellprice = 320;
 }
 
@@ -71,7 +68,6 @@ function FreezeTower () : Tower () constructor {
 	description = "Freezes nearby bloons. Frozen bloons are immune to darts and tacks, but bombs will destroy them. Can upgrade to increased speed time, and larger radius.";
 	tower_speed = "Slow";
 	towermods = [new LongFreezeTime(), new WideFreezeRadius()];
-	purchasedmods = [false,false];
 	sellprice = 680;
 }
 
@@ -90,6 +86,5 @@ function CannonTower () : Tower () constructor {
 	description = "Launches a bomb that explodes on impact. Can upgrade to bigger bombs and longer range.";
 	tower_speed = "Medium";
 	towermods = [new BiggerBombs(), new ExtraRangeBombs()];
-	purchasedmods = [false,false];
 	sellprice = 720;
 }
