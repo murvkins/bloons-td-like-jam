@@ -1,5 +1,5 @@
 global.hp = 40;
-global.level = 49;
+global.level = 0;
 global.coins = 20000;
 
 global.instance_selected = noone;

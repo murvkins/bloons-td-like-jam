@@ -17,5 +17,5 @@ for (var i = 0; i < array_length(towerEnum.towermods); i++) {
 fire_rate_mod = 1;
 radius_mod = 1;
 freeze_mod = 1;
-bullet_life_mod = 1;
+bullet_life_mod = 0;
 range_mod = 1;
