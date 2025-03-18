@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTower1",
-    "path":"sprites/sTower1/sTower1.yy",
+    "name":"sNormalTower",
+    "path":"sprites/sNormalTower/sNormalTower.yy",
   },
   "spriteMaskId":null,
   "visible":true,

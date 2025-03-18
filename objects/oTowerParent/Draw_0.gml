@@ -9,6 +9,7 @@ if (instance_exists(objectToShoot) && tower.rotate) {
 
 if (global.instance_selected == id) {
 	rangevisible = true;
+	
 }
 
 if (global.instance_selected != id && rangevisible) {

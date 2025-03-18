@@ -10,8 +10,14 @@ if (instance_exists(objectToShoot)) {
 		case "at-target":		
 			if (tower.name != "Bomb Tower") {
 				instance_create_layer(x, y, "bullets", oBullet, {speed: tower.bullet_speed, direction:point_direction(x,y, objectToShoot.x, objectToShoot.y), damage: tower.damage, ttl: bttl, life: 1+bullet_life_mod});
+				randomize();
+				var snd = audio_play_sound(snd_shooting4, 10, false);
+				audio_sound_pitch(snd, random_range(0.9, 1.1));
+				
 			} else {
 				instance_create_layer(x, y, "bullets", oCannonBall, {speed: tower.bullet_speed, direction: point_direction(x,y, objectToShoot.x, objectToShoot.y), damage: tower.damage, radiusmod: radius_mod, ttl: bttl});
+				var bmb = audio_play_sound(snd_cannon_firing, 10, false);
+				audio_sound_pitch(bmb, random_range(0.9, 1.1));
 			}
 			break;
 		case "8-way":
@@ -24,7 +30,11 @@ if (instance_exists(objectToShoot)) {
 			instance_create_layer(x, y, "bullets", oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x+10,y+10), damage: tower.damage, ttl: bttl});
 			instance_create_layer(x, y, "bullets", oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x-10,y-10), damage: tower.damage, ttl: bttl});
 			instance_create_layer(x, y, "bullets", oBullet, {speed: tower.bullet_speed, direction: point_direction(x,y,x-10,y+10), damage: tower.damage, ttl: bttl});
-		
+			var eightsnd = audio_play_sound(snd_shooting, 10, false);
+			audio_sound_pitch(eightsnd, random_range(0.85, 1.15));
+			audio_play_sound(snd_shooting, 10, false);
+			audio_sound_pitch(eightsnd, random_range(0.85, 1.15));
+			
 			break;
 		case "none":
 			if (tower.name == "Ice Tower") {
