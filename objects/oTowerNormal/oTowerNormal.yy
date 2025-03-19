@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNormalTower",
-    "path":"sprites/sNormalTower/sNormalTower.yy",
+    "name":"monkeywgun",
+    "path":"sprites/monkeywgun/monkeywgun.yy",
   },
   "spriteMaskId":{
     "name":"towerCollision",

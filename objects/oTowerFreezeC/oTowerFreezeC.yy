@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sFreezeTower",
-    "path":"sprites/sFreezeTower/sFreezeTower.yy",
+    "name":"ice_tower",
+    "path":"sprites/ice_tower/ice_tower.yy",
   },
   "spriteMaskId":null,
   "visible":true,

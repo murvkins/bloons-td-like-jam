@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCannon",
-    "path":"sprites/sCannon/sCannon.yy",
+    "name":"cannon",
+    "path":"sprites/cannon/cannon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

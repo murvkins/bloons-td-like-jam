@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTower3",
-    "path":"sprites/sTower3/sTower3.yy",
+    "name":"supermonkeywgun",
+    "path":"sprites/supermonkeywgun/supermonkeywgun.yy",
   },
   "spriteMaskId":{
     "name":"towerCollision",

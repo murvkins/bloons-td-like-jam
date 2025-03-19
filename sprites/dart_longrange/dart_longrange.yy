@@ -23,7 +23,7 @@
   ],
   "name":"dart_longrange",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"upgrades",
     "path":"folders/Sprites/upgrades.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":40,
     "yorigin":0,
   },
   "swatchColours":null,

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNormalTower",
-    "path":"sprites/sNormalTower/sNormalTower.yy",
+    "name":"monkey",
+    "path":"sprites/monkey/monkey.yy",
   },
   "spriteMaskId":null,
   "visible":true,

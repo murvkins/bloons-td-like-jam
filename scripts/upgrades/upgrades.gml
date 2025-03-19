@@ -7,6 +7,7 @@ function PiercingDarts () : TowerUpgrade () constructor {
 	mod_fire_rate = 0;
 	mod_freeze_timer = 0;
 	mod_aoe_radius = 0;
+	image = dart_sharp;
 }
 
 function LongRange () : TowerUpgrade () constructor {
@@ -18,6 +19,7 @@ function LongRange () : TowerUpgrade () constructor {
 	mod_fire_rate = 0;
 	mod_freeze_timer = 0;
 	mod_aoe_radius = 0;
+	image = dart_longrange;
 }
 
 function FasterShooting () : TowerUpgrade () constructor {
@@ -29,6 +31,7 @@ function FasterShooting () : TowerUpgrade () constructor {
 	mod_fire_rate = 1.5;
 	mod_freeze_timer = 0;
 	mod_aoe_radius = 0;
+	image = faster_shooting;
 }
 
 function ExtraRangeTacks () : TowerUpgrade () constructor {
@@ -40,6 +43,7 @@ function ExtraRangeTacks () : TowerUpgrade () constructor {
 	mod_fire_rate = 0;
 	mod_freeze_timer = 0;
 	mod_aoe_radius = 0;
+	image = dart_longrange;
 }
 
 function LongFreezeTime () : TowerUpgrade () constructor {
@@ -51,6 +55,7 @@ function LongFreezeTime () : TowerUpgrade () constructor {
 	mod_fire_rate = 0;
 	mod_freeze_timer = 2;
 	mod_aoe_radius = 0;
+	image = longfreeze;
 }
 
 function WideFreezeRadius () : TowerUpgrade () constructor {
@@ -62,6 +67,7 @@ function WideFreezeRadius () : TowerUpgrade () constructor {
 	mod_fire_rate = 0;
 	mod_freeze_timer = 0;
 	mod_aoe_radius = 0;
+	image = wide_freeze;
 }
 
 function BiggerBombs () : TowerUpgrade () constructor {
@@ -73,6 +79,7 @@ function BiggerBombs () : TowerUpgrade () constructor {
 	mod_fire_rate = 0;
 	mod_freeze_timer = 0;
 	mod_aoe_radius = 1.5;
+	image = biggerbombs;
 }
 
 function ExtraRangeBombs () : TowerUpgrade () constructor {
@@ -84,6 +91,7 @@ function ExtraRangeBombs () : TowerUpgrade () constructor {
 	mod_fire_rate = 0;
 	mod_freeze_timer = 0;
 	mod_aoe_radius = 0;
+	image = bomb_longrange;
 }
 
 function EpicRange () : TowerUpgrade () constructor {
@@ -95,6 +103,7 @@ function EpicRange () : TowerUpgrade () constructor {
 	mod_fire_rate = 0;
 	mod_freeze_timer = 0;
 	mod_aoe_radius = 0;
+	image = dart_longrange;
 }
 
 function deleteAllUpgradeBacks() {
@@ -121,7 +130,7 @@ function drawUpgradeBacks(tower) {
 				} else {
 					instance_create_layer(xleft, 290, "upgrades", oUpgradeParent, {sprite_index: sUpgradeBackGreenBig, towerid: tower, mod_index: i});
 				}	
-				instance_create_layer(xleft+xwidth/2, 295, "Instances", oUpgradeTemp); //upgrade image
+				instance_create_layer(xleft+xwidth/2, 295, "Instances", oUpgradeTemp, {sprite_index: towermods[i].image, image_xscale: 0.5, image_yscale: 0.5}); //upgrade image
 				break;			
 			case 2:
 				xwidth = 70;
@@ -132,7 +141,7 @@ function drawUpgradeBacks(tower) {
 				} else {
 					instance_create_layer(xleft, 290, "upgrades", oUpgradeParent, {sprite_index: sUpgradeBackGreen, towerid: tower, mod_index: i});
 				}	
-				instance_create_layer(xleft+xwidth/2, 295, "Instances", oUpgradeTemp); //upgrade image
+				instance_create_layer(xleft+xwidth/2, 295, "Instances", oUpgradeTemp, {sprite_index: towermods[i].image, image_xscale: 0.5, image_yscale: 0.5}); //upgrade image
 				break;			
 			}
 	}

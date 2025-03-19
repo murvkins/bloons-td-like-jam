@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTower2",
-    "path":"sprites/sTower2/sTower2.yy",
+    "name":"tack_tower",
+    "path":"sprites/tack_tower/tack_tower.yy",
   },
   "spriteMaskId":null,
   "visible":true,

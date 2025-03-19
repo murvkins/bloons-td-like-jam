@@ -1,4 +1,4 @@
 
 function snapToGrid(v1){	
-	return 	v1 - (v1 % 8);
+	return 	v1 - (v1 % 2);
 }

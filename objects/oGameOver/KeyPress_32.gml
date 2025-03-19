@@ -1,1 +1,1 @@
-room_restart();
+if (global.gameover) room_restart();

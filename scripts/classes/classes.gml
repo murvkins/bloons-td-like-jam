@@ -34,4 +34,5 @@ function TowerUpgrade () constructor {
 	mod_fire_rate = 0;
 	mod_freeze_timer = 0;
 	mod_aoe_radius = 0;
+	image = noone;
 }

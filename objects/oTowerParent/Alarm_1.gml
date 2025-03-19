@@ -9,7 +9,8 @@ if (instance_exists(objectToShoot)) {
 		switch(tower.bullet_direction) {
 		case "at-target":		
 			if (tower.name != "Bomb Tower") {
-				instance_create_layer(x, y, "bullets", oBullet, {speed: tower.bullet_speed, direction:point_direction(x,y, objectToShoot.x, objectToShoot.y), damage: tower.damage, ttl: bttl, life: 1+bullet_life_mod});
+				var angle = image_angle;
+				instance_create_layer(x+25, y-5, "bullets", oBullet, {image_angle: angle, speed: tower.bullet_speed, direction:point_direction(x,y, objectToShoot.x, objectToShoot.y), damage: tower.damage, ttl: bttl, life: 1+bullet_life_mod});
 				randomize();
 				var snd = audio_play_sound(snd_shooting4, 10, false);
 				audio_sound_pitch(snd, random_range(0.9, 1.1));
