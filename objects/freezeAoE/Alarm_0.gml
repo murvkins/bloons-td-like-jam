@@ -7,7 +7,7 @@ if (aoeradius < maxradius) {
 		if (array_length(bloons) > 0) {			
 			for (var i = 0; i < array_length(bloons); i++) {
 				if (bloons[i].bloon.name != "white") {
-					bloons[i].rFreezetimer = 60 * freezemod;
+					bloons[i].rFreezetimer = 90 * freezemod;
 				}
 			}
 		}

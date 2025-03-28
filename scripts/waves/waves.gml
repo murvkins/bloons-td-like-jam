@@ -1,5 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function getCurrentWave(){
 	allwaves = [
 		[12,0,0,0,0,0],
@@ -54,4 +53,61 @@ function getCurrentWave(){
 		[0,0,0,0,99,100],		
 	];
 	return allwaves[global.level - 1];
+}
+
+function getComment() {
+	roundcomments = [
+		"Welcome to Bloons Tower Defense-like! Stop the Bloons escaping by building towers next to the maze. As you get more money build more towers or upgrading existing ones.",
+		"That was too easy, press 'Start Round' to play the next round.",
+		"Still super easy, you didn't miss any did you?",
+		"Blue bloons move faster and have red bloons inside them.",
+		"Bloons start spawn a bit faster every 10 rounds.",
+		"Green bloons move even faster and have blue bloons inside them!",
+		"Lots of blue ones coming up. Hope you're ready...",
+		"The dart tower piercing upgrade allows darts to pop up to 2 bloons each.",
+		"Ice towers work best with bomb towers nearby.",
+		"Are you ready for a whole bunch of greens? The bloons are going to spawn just a bit faster from now on.",
+		"Yellow bloons are - you guessed it, even bigger and even faster and have greens inside them.",
+		"Tower upgrades are usually a better option than just adding more towers.",
+		"Tower defense is about what towers you use and where you put them.",
+		"The super monkey tower is not a joke, he really is poptastic!",
+		"You lose one life for every bloon that escapes. So a blue bloon costs you two lives, a green one three lives etc.",
+		"This game took quite a while to make. I really appreciate that you are playing it!",
+		"Relax a bit, there are no yellow bloons in the next level.",
+		"Have you played Harvest Earth? Probably...if you are Lýz",
+		"A whole bunch of greens coming up.",
+		"Too easy. Let's step this up a bit. The bloons are spawing faster now too!",
+		"Place your towers so that they can be shooting at something for a long time, corners are good.",
+		"Ready for 45 straight yellows?",
+		"Lots of yellows and greens - that should take care of you...",
+		"There's a secret ENDLESS mode at the end if you make it...oops, it's not secret anymore.",
+		"The oldest living land animal on earth is a 192-year-old tortoise named Jonathan.",
+		"Tack towers are really useful for thinning out the crowds - get the speed upgrade for extra effectiveness.",
+		"Black bloons are nasty - they are small but contain 2 yellows inside them. Oh did I mention they are IMMUNE TO BOMBS?!",
+		"When you sell a tower, you get 80% of what you paid for it, including all the upgrade money you spent.",
+		"Lots and lots of yellow and black bloons. Good luck!",
+		"Next is a cash round - pop hundreds and hundreds of greens to top up your money. The bloons will spawn even faster!",
+		"Monkeys aren't so good at shooting at things moving to their left. Something about being right handed I guess.",
+		"The good thing about black bloons is that they move slower than yellows.",
+		"A - lot of yellows.",
+		"Monkeys are intelligent communicators and can tell each other secrets.",
+		"Build as many monkies as you can. You're going to need them!",
+		"You can improve frame rate a bit by having no towers selected during the round.",
+		"Just black bloons coming up. Lots of 'em.",
+		"Just around the corner there are a throng of yellow bloons waiting to have a go...",
+		"Just for fun, there are some of each colour bloon in the next level. Enjoy popping those easy reds for a change.",
+		"80 black bloons coming up and all future bloons will be spawning faster!",
+		"It's important to not lose early lives, because the levels are only getting harder.",
+		"White bloons are IMMUNE TO FREEZING - and they also have 2 yellows inside them.",
+		"How many monkeys does it take to make a Super Monkey? That stuff will keep you up at night.",
+		"Lots and lots and lots of black bloons. More than ever.",
+		"Lots and lots and lots of WHITE bloons. More than ever.",
+		"Lots of white, black, and yellow bloons. The next level is going to hurt.",
+		"You still playing? Thank you! You're almost to the last end!",
+		"You got any Super Monkeys yet? Are they really worth all that money?",
+		"Its ok if you don't pass this level. Really it is. Just try again. Its the effort that counts.",
+		"This is the last level. There are TONS AND TONS of black AND white bloons coming. Hope you have lots of lives left...",
+		"You did it! Thank you for playing! Press Start Round for ENDLESS MODE! Black and white bloons spawn and move faster and faster as time passes!",
+	];
+	return roundcomments[global.level];
 }

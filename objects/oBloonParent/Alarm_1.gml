@@ -7,9 +7,5 @@ if (array_length(spawn) > 0) {
 		pp += 0.04;
 	}
 }
-
 global.coins += bloon.reward;
 instance_destroy();
-var snd = audio_play_sound(snd_pop, 10, false);
-audio_sound_gain(snd, 0.25, 0.4);
-audio_sound_pitch(snd, random_range(0.85, 1.15));

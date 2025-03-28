@@ -6,13 +6,13 @@ if (aoeradius < maxradius) {
 	image_yscale = aoeradius;
 } else if (aoeradius >= maxradius && aoealpha == 1) {
 		var bloons = bloonsInArea(sprite_width/2, x, y);
-		var bmb = audio_play_sound(snd_bomb, 10, false);
-		audio_sound_pitch(bmb, random_range(0.75, 1.15));
+		audio_play_sound(snd_bomb, 10, false, 1, 0, random_range(0.75, 1.15));		
 		if (array_length(bloons) > 0) {			
-			for (var i = 0; i < array_length(bloons); i++) {
-				
+			for (var i = 0; i < array_length(bloons); i++) {				
 				if (bloons[i].bloon.name != "black") {
-					bloons[i].damage += self.damage;
+					bloons[i].alarm[1] = 1;
+					sprite_index = death;
+					audio_play_sound(snd_pop, 10, false, random_range(0.5, 0.75), 0, random_range(0.85, 1.15));
 				}
 			}
 		}

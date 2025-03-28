@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBlackBloon",
-    "path":"sprites/sBlackBloon/sBlackBloon.yy",
+    "name":"blackbloon",
+    "path":"sprites/blackbloon/blackbloon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

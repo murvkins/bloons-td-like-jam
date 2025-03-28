@@ -2,7 +2,17 @@
 
 if (objectToShoot == noone) {
 	//if no target, check for new target
-	objectToShoot = instance_nearest(x, y, oBloonParent);
+	switch(tower.name) {
+	case "Ice Tower": 
+		objectToShoot = firstBloonFiltered(tower.range * range_mod, x, y, "white");		
+		break;
+	case "Bomb Tower":
+		objectToShoot = firstBloonFiltered(tower.range * range_mod, x, y, "black");		
+		break;
+	default:
+		objectToShoot = firstBloon(tower.range * range_mod, x, y);
+		break;
+	}
 }
 
 if (instance_exists(objectToShoot)) {

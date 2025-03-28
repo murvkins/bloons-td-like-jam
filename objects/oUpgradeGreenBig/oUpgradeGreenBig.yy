@@ -4,7 +4,10 @@
   "eventList":[],
   "managed":true,
   "name":"oUpgradeGreenBig",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oUpgradeParent","path":"objects/oUpgradeParent/oUpgradeParent.yy",},"propertyId":{"name":"mod_index","path":"objects/oUpgradeParent/oUpgradeParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oUpgradeParent","path":"objects/oUpgradeParent/oUpgradeParent.yy",},"propertyId":{"name":"towerid","path":"objects/oUpgradeParent/oUpgradeParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"",},
+  ],
   "parent":{
     "name":"hud",
     "path":"folders/Objects/hud.yy",

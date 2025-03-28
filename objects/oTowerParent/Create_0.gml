@@ -19,3 +19,11 @@ radius_mod = 1;
 freeze_mod = 1;
 bullet_life_mod = 0;
 range_mod = 1;
+
+part = 0;
+
+if (tower.name == "Ice Tower") {
+	part = part_system_create(part_snow);
+	part_system_position(part, x-sprite_width/2*global.scale+10, y-sprite_height/2*global.scale+10);
+	part_system_layer(part, layer_get_id("Instances"));
+}

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWhiteBloon",
-    "path":"sprites/sWhiteBloon/sWhiteBloon.yy",
+    "name":"whitebloon",
+    "path":"sprites/whitebloon/whitebloon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

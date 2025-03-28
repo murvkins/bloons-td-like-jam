@@ -1,5 +1,4 @@
 /// @description freeze timer
-
 if (rFreezetimer > 0) {
 	path_speed = 0;
 	rFreezetimer--;

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sGreenBloon",
-    "path":"sprites/sGreenBloon/sGreenBloon.yy",
+    "name":"greenbloon",
+    "path":"sprites/greenbloon/greenbloon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

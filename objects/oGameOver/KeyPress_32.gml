@@ -1,1 +1,4 @@
-if (global.gameover) room_restart();
+if (global.gameover) {
+	with (oTowerParent) instance_destroy();
+	room_restart();
+}

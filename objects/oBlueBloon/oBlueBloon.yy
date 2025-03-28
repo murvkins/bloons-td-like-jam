@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBlueBloon",
-    "path":"sprites/sBlueBloon/sBlueBloon.yy",
+    "name":"bluebloon",
+    "path":"sprites/bluebloon/bluebloon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

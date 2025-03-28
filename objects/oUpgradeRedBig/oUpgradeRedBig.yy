@@ -11,7 +11,10 @@
     "name":"hud",
     "path":"folders/Objects/hud.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oUpgradeParent",
+    "path":"objects/oUpgradeParent/oUpgradeParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -25,9 +28,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"towerid","filters":[],"listItems":[],"multiselect":false,"name":"towerid","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

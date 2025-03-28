@@ -1,2 +1,4 @@
-if (life <= 0) instance_destroy();
+if (life <= 0) {
+	instance_destroy();
+}
 	

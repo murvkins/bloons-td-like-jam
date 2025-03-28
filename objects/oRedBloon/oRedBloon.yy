@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sRedBloon",
-    "path":"sprites/sRedBloon/sRedBloon.yy",
+    "name":"redbloon",
+    "path":"sprites/redbloon/redbloon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

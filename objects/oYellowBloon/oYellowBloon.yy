@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sYellowBloon",
-    "path":"sprites/sYellowBloon/sYellowBloon.yy",
+    "name":"yellowbloon",
+    "path":"sprites/yellowbloon/yellowbloon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,5 +1,7 @@
 /// @description next level
 
+if (global.level <= 50) {
+
 //get the next wave
 var wavespawn = getCurrentWave();
 var spawnorder = [];
@@ -15,3 +17,6 @@ for (var t = 0; t < 6; t++) {
 spawn_queue = array_shuffle(spawnorder);
 
 alarm[1] = 1;
+} else {
+	alarm[3] = 1;
+}
