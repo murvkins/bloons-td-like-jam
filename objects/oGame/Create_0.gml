@@ -8,3 +8,5 @@ global.sellprice = 0;
 global.gameover = false;
 
 global.scale = 0.75;
+
+global.endlesskillcount = 0;

@@ -121,3 +121,13 @@ if (global.instance_selected != noone && global.new_tower_hover == noone) {
 	draw_text_ext(630,290, displaytower.towerEnum.description, 20, 140);
 	draw_set_color(c_white);
 }
+
+if (global.level = 51) {
+	//draw kill count
+	draw_set_color(c_white);
+	draw_set_font(fSegoeUI_20);
+	draw_set_halign(fa_left);	
+	draw_text(620,510,"Kills:");
+	draw_set_halign(fa_right);
+	draw_text(room_width - 20,510,string(global.endlesskillcount));	
+}

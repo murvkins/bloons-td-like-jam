@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"audioStart",
+  "audioGroupId":{
+    "name":"group_music",
+    "path":"audiogroups/group_music",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":8.0,
+  "name":"audioStart",
+  "parent":{
+    "name":"music",
+    "path":"folders/Sounds/music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"audioStart.wav",
+  "type":0,
+  "volume":0.65,
+}

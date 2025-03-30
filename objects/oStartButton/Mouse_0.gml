@@ -1,6 +1,8 @@
-with (oSpawn) alarm[0] = 1;
+with (oSpawn) alarm[0] = 120;
 instance_destroy();
 global.level++;
-//if (global.level > 50) global.level = 1;
+
+global.musictrack = 2;
+with(oMusicButton) alarm[2] = 1;
 
 with (oCommentBox) instance_destroy();

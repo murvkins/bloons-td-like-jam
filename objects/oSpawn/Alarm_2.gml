@@ -6,6 +6,13 @@ if (instance_number(oBloonParent) <= 0) {
 	global.coins += 101 - global.level;
 	instance_create_layer(614, 508, "Instances", oStartButton);
 	instance_create_layer(40, 460, "Instances", oCommentBox);
+	global.musictrack = 4;
+	with(oMusicButton) alarm[2] = 1;	
 } else {	
 	alarm[2] = 1;
+}
+
+if (global.gameover) {
+	global.musictrack = 4;
+	with(oMusicButton) alarm[2] = 1;
 }
