@@ -197,6 +197,8 @@
     {"id":{"name":"title_background","path":"sprites/title_background/title_background.yy",},},
     {"id":{"name":"title_bloons","path":"sprites/title_bloons/title_bloons.yy",},},
     {"id":{"name":"title_defense","path":"sprites/title_defense/title_defense.yy",},},
+    {"id":{"name":"title_Madness","path":"sprites/title_Madness/title_Madness.yy",},},
+    {"id":{"name":"title_Monkey","path":"sprites/title_Monkey/title_Monkey.yy",},},
     {"id":{"name":"title_sig","path":"sprites/title_sig/title_sig.yy",},},
     {"id":{"name":"title_tower","path":"sprites/title_tower/title_tower.yy",},},
     {"id":{"name":"towerCollision","path":"sprites/towerCollision/towerCollision.yy",},},

@@ -14,5 +14,3 @@ trackplaying = 0;
 
 global.musictrack = 0;
 alarm[1] = 1;
-
-

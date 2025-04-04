@@ -29,7 +29,7 @@ function GreenBloon () : Enemy () constructor {
 function YellowBloon () : Enemy () constructor {
 	name = "yellow"
 	object = oBloonParent;
-	spd = 3.2;
+	spd = 2.8;
 	tier = 4;
 	survivedamage = 4;
 	reward = 4;
